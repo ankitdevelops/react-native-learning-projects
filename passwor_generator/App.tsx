@@ -1,5 +1,5 @@
 import {StyleSheet, Text, View} from 'react-native';
-import React from 'react';
+import React, {useState} from 'react';
 
 // form validation
 import * as Yup from 'yup';
@@ -11,6 +11,23 @@ const PasswordSchema = Yup.object().shape({
     .required('Length is required'),
 });
 const App = () => {
+  const [password, setPassword] = useState('');
+  const [isPassGenerated, setIsPassGenerated] = useState(false);
+  const [lowerCase, setLowerCase] = useState(false);
+  const [numbers, setNumbers] = useState(false);
+  const [symbols, setSymbols] = useState(false);
+
+  const generatePasswordString = (passwordLength: number) => {
+    //
+  };
+
+  const createPassword = (characters: String, passwordLength: number) => {
+    //
+  };
+
+  const resetPassword = () => {
+    //
+  };
   return (
     <View>
       <Text>App</Text>
