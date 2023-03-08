@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, SafeAreaView, ScrollView} from 'react-native';
+import {SafeAreaView, ScrollView} from 'react-native';
 import ActionCard from './Components/ActionCard';
 import ContactList from './Components/ContactList';
 import ElevatedCard from './Components/ElevatedCard';
