@@ -80,7 +80,6 @@ const App = () => {
             initialValues={{passwordLength: ''}}
             validationSchema={PasswordSchema}
             onSubmit={values => {
-              console.log(values);
               generatePasswordString(+values.passwordLength);
             }}>
             {({
@@ -91,7 +90,6 @@ const App = () => {
               handleChange,
               handleSubmit,
               handleReset,
-              /* and other goodies */
             }) => (
               <>
                 <View style={styles.inputWrapper}>
